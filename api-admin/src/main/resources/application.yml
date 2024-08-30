@@ -1,0 +1,36 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://localhost:3306/sys_admin
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+mybatis:
+  #  configuration: # setting配置
+  #    auto-mapping-behavior: full
+  #    map-underscore-to-camel-case: true
+  #    log-impl: org.apache.ibatis.logging.slf4j.Slf4jImpl
+  type-aliases-package: com.sysxx.**.domain # 配置别名
+  mapperLocations: classpath*:mapper/*.xml
+#  configLocation: classpath:mybatis/mybatis-config.xml
+  configuration:
+    map-underscore-to-camel-case: true
+knife4j:
+#   开启增强配置
+  enable: true
+#  开启Basic登录认证功能
+#  openapi:
+#    title: 小富的官方文档
+#    description: "关注公众号：程序员小富"
+#    email: 515361725@qq.com
+#    concat: 程序员小富  # 作者
+#    url: http://xiaofucode.com
+#    version: v1.0 # 版本号
+#    license: Apache 2.0
+#    license-url: https://fire100.top
+#    terms-of-service-url: https://fire100.top #API服务条款
