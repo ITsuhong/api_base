@@ -1,0 +1,166 @@
+{
+  "code": 200,
+  "data": [
+    {
+      "id": 1,
+      "createTime": null,
+      "updateTime": null,
+      "name": "新环境",
+      "userId": null,
+      "userName": null,
+      "projectId": null,
+      "variableList": [
+        {
+          "id": null,
+          "createTime": null,
+          "updateTime": null,
+          "name": "新环境",
+          "value": null,
+          "description": null,
+          "environmentId": null
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "createTime": null,
+      "updateTime": null,
+      "name": "第二个环境",
+      "userId": null,
+      "userName": null,
+      "projectId": null,
+      "variableList": [
+        {
+          "id": null,
+          "createTime": null,
+          "updateTime": null,
+          "name": "第二个环境",
+          "value": null,
+          "description": null,
+          "environmentId": null
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "createTime": null,
+      "updateTime": null,
+      "name": "第三个环境",
+      "userId": null,
+      "userName": null,
+      "projectId": null,
+      "variableList": [
+        {
+          "id": null,
+          "createTime": null,
+          "updateTime": null,
+          "name": "第三个环境",
+          "value": null,
+          "description": null,
+          "environmentId": null
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "createTime": null,
+      "updateTime": null,
+      "name": "第四个个环境",
+      "userId": null,
+      "userName": null,
+      "projectId": null,
+      "variableList": [
+        {
+          "id": null,
+          "createTime": null,
+          "updateTime": null,
+          "name": "第四个个环境",
+          "value": null,
+          "description": null,
+          "environmentId": null
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "createTime": null,
+      "updateTime": null,
+      "name": "环境44",
+      "userId": null,
+      "userName": null,
+      "projectId": null,
+      "variableList": [
+        {
+          "id": null,
+          "createTime": null,
+          "updateTime": null,
+          "name": "环境44",
+          "value": null,
+          "description": null,
+          "environmentId": 20
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "createTime": null,
+      "updateTime": null,
+      "name": "",
+      "userId": null,
+      "userName": null,
+      "projectId": null,
+      "variableList": [
+        {
+          "id": null,
+          "createTime": null,
+          "updateTime": null,
+          "name": "",
+          "value": null,
+          "description": null,
+          "environmentId": 21
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "createTime": null,
+      "updateTime": null,
+      "name": "",
+      "userId": null,
+      "userName": null,
+      "projectId": null,
+      "variableList": [
+        {
+          "id": null,
+          "createTime": null,
+          "updateTime": null,
+          "name": "",
+          "value": null,
+          "description": null,
+          "environmentId": 22
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "createTime": null,
+      "updateTime": null,
+      "name": "",
+      "userId": null,
+      "userName": null,
+      "projectId": null,
+      "variableList": [
+        {
+          "id": null,
+          "createTime": null,
+          "updateTime": null,
+          "name": "",
+          "value": null,
+          "description": null,
+          "environmentId": 23
+        }
+      ]
+    }
+  ],
+  "message": "操作成功"
+}

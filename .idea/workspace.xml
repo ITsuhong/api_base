@@ -11,7 +11,32 @@
     </loaded-modules>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="88ae31ae-d9d1-42ea-aeab-7a71ed67d3bf" name="更改" comment="" />
+    <list default="true" id="88ae31ae-d9d1-42ea-aeab-7a71ed67d3bf" name="更改" comment="">
+      <change afterPath="$PROJECT_DIR$/api-admin/src/main/java/com/sysxx/web/controller/variable/VariableController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-common/src/main/java/com/sysxx/common/core/domain/entity/EnvironmentResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-common/src/main/java/com/sysxx/common/core/domain/entity/ServiceUrlData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-system/src/main/java/com/sysxx/system/domain/ServiceUrl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-system/src/main/java/com/sysxx/system/mapper/ServiceUrlMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-system/src/main/java/com/sysxx/system/service/IVariableService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-system/src/main/java/com/sysxx/system/service/impl/VariableServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-system/src/main/resources/mapper/ServiceUrlMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e97c1bd9-b695-4cfb-bfc4-3a6412701d6e.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/e97c1bd9-b695-4cfb-bfc4-3a6412701d6e.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-admin/src/main/java/com/sysxx/web/controller/environment/EnvironmentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-admin/src/main/java/com/sysxx/web/controller/environment/EnvironmentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-common/src/main/java/com/sysxx/common/dao/CreateEnvironmentData.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-common/src/main/java/com/sysxx/common/dao/CreateEnvironmentData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-common/src/main/java/com/sysxx/common/dao/ResponseData.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-common/src/main/java/com/sysxx/common/dao/ResponseData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-common/src/main/java/com/sysxx/common/dao/VariableData.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-common/src/main/java/com/sysxx/common/core/domain/entity/VariableData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-common/src/main/java/com/sysxx/common/utils/RestTemplateUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-common/src/main/java/com/sysxx/common/utils/RestTemplateUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-system/src/main/java/com/sysxx/system/domain/Environment.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-system/src/main/java/com/sysxx/system/domain/Environment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-system/src/main/java/com/sysxx/system/mapper/EnvironmentMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-system/src/main/java/com/sysxx/system/mapper/EnvironmentMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-system/src/main/java/com/sysxx/system/mapper/VariableMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-system/src/main/java/com/sysxx/system/mapper/VariableMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-system/src/main/java/com/sysxx/system/service/IAdminUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-system/src/main/java/com/sysxx/system/service/IAdminUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-system/src/main/java/com/sysxx/system/service/IEnvironmentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-system/src/main/java/com/sysxx/system/service/IEnvironmentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-system/src/main/java/com/sysxx/system/service/impl/EnvironmentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-system/src/main/java/com/sysxx/system/service/impl/EnvironmentServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-system/src/main/java/com/sysxx/system/service/impl/RequestServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-system/src/main/java/com/sysxx/system/service/impl/RequestServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-system/src/main/resources/mapper/EnvironmentMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api-system/src/main/resources/mapper/EnvironmentMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-system/src/main/resources/mapper/VariableMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api-system/src/main/resources/mapper/VariableMapper.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,9 +50,9 @@
       <list>
         <option value="AnnotationType" />
         <option value="Enum" />
-        <option value="Class" />
-        <option value="Interface" />
         <option value="spring-beans.schema" />
+        <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -44,6 +69,9 @@
   &quot;associatedIndex&quot;: 1
 }</component>
   <component name="ProjectId" id="2kDwkZYSTmut1QoEJcYzQH8MDN2" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -51,6 +79,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "HTTP 请求.generated-requests | #1.executor": "Run",
+    "HTTP 请求.generated-requests | #13.executor": "Run",
     "HTTP 请求.generated-requests | #2.executor": "Run",
     "HTTP 请求.generated-requests | #6.executor": "Run",
     "Maven.api-admin [clean].executor": "Run",
@@ -76,7 +105,7 @@
     "git-widget-placeholder": "main",
     "jdk.selected.JAVA_MODULE": "17 (2)",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/javaProject/api_base",
+    "last_opened_file_path": "D:/javaProject/api_base/api-admin/src/main/java/com/sysxx/web",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -98,6 +127,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\javaProject\api_base\api-admin\src\main\java\com\sysxx\web" />
       <recent name="D:\ruoyi" />
       <recent name="D:\ruoyi\ruoyi_base\ruoyi-admin\src\main\resources" />
     </key>
@@ -123,10 +153,10 @@
     <configuration name="generated-requests | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" requestIdentifier="#1" runType="运行单个请求">
       <method v="2" />
     </configuration>
-    <configuration name="generated-requests | #2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="2" requestIdentifier="#2" runType="运行单个请求">
+    <configuration name="generated-requests | #13" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="13" requestIdentifier="#13" runType="运行单个请求">
       <method v="2" />
     </configuration>
-    <configuration name="generated-requests | #6" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="6" requestIdentifier="#6" runType="运行单个请求">
+    <configuration name="generated-requests | #2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="2" requestIdentifier="#2" runType="运行单个请求">
       <method v="2" />
     </configuration>
     <configuration name="Main" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
@@ -145,10 +175,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.Main" />
+        <item itemvalue="HTTP 请求.generated-requests | #13" />
         <item itemvalue="应用程序.RestTemplateUtil" />
         <item itemvalue="HTTP 请求.generated-requests | #2" />
         <item itemvalue="HTTP 请求.generated-requests | #1" />
-        <item itemvalue="HTTP 请求.generated-requests | #6" />
       </list>
     </recent_temporary>
   </component>
@@ -179,6 +209,8 @@
       <workItem from="1723520999979" duration="18000" />
       <workItem from="1723521052414" duration="43887000" />
       <workItem from="1724662787445" duration="17728000" />
+      <workItem from="1725012126002" duration="73000" />
+      <workItem from="1725240683847" duration="36501000" />
     </task>
     <servers />
   </component>

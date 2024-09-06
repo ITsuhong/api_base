@@ -8,4 +8,14 @@ import java.util.List;
 @Mapper
 public interface VariableMapper {
     public void createListVariable(List<Variable> variableList);
+
+    public void createVariable(Variable variable);
+
+    public List<Variable> selectGlobal();
+
+    public void delete(Integer id);
+
+    public void update(Variable variable);
+
+    public void deleteAllGlo();
 }

@@ -1,0 +1,74 @@
+{
+  "code": 200,
+  "data": [
+    {
+      "id": 20,
+      "createTime": null,
+      "updateTime": null,
+      "name": "环境44",
+      "userId": null,
+      "userName": null,
+      "projectId": null,
+      "variableDataList": [
+        {
+          "id": 20,
+          "name": "name",
+          "value": "李四",
+          "description": "描述一"
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "createTime": null,
+      "updateTime": null,
+      "name": "",
+      "userId": null,
+      "userName": null,
+      "projectId": null,
+      "variableDataList": [
+        {
+          "id": 21,
+          "name": "name",
+          "value": "李四",
+          "description": "描述"
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "createTime": null,
+      "updateTime": null,
+      "name": "",
+      "userId": null,
+      "userName": null,
+      "projectId": null,
+      "variableDataList": [
+        {
+          "id": 22,
+          "name": "name",
+          "value": "李四",
+          "description": "描述"
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "createTime": null,
+      "updateTime": null,
+      "name": "",
+      "userId": null,
+      "userName": null,
+      "projectId": null,
+      "variableDataList": [
+        {
+          "id": 23,
+          "name": "age",
+          "value": "12",
+          "description": "描述"
+        }
+      ]
+    }
+  ],
+  "message": "操作成功"
+}

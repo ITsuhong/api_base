@@ -7,8 +7,37 @@
     <insert id="createListVariable">
         insert into variable(name,value,description,environment_id) values
         <foreach item="item" index="index" collection="list" separator=",">
-            (#{name},#{value},#{description},#{environment_id})
+            (#{item.name},#{item.value},#{item.description},#{item.environmentId})
         </foreach>
     </insert>
+    <insert id="createVariable">
+        insert into variable(name, value, description, environment_id)
+        values (#{name}, #{value}, #{description}, #{environmentId})
+    </insert>
+    <select id="selectGlobal" resultType="Variable">
+        select *
+        from variable
+        where environment_id is null
+    </select>
+    <delete id="delete">
+        delete
+        from variable
+        where environment_id = #{id}
+
+    </delete>
+    <delete id="deleteAllGlo">
+        delete
+        from variable
+        where environment_id is null
+    </delete>
+
+    <update id="update">
+        update variable
+        set name=#{name},
+            value=#{value},
+            description=#{description}
+        where id = #{id}
+    </update>
+
 
 </mapper>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sysxx.system.mapper.ServiceUrlMapper">
+
+
+<!--    <insert id="create" useGeneratedKeys="true" keyProperty="id">-->
+<!--        insert into `service_url` (name, url, environment_id)-->
+<!--        values (#{name}, #{url}, #{environmentId})-->
+<!--    </insert>-->
+
+    <insert id="create" useGeneratedKeys="true" keyProperty="id">
+        insert into `service_url` (name, url, environment_id) values
+      <foreach collection="list" item="item" separator=",">
+           (#{item.name}, #{item.url}, #{item.environmentId})
+      </foreach>
+    </insert>
+
+    <delete id="delete">
+        delete
+        from service_url
+        where environment_id = #{id}
+
+    </delete>
+
+    <update id="update">
+        update service_url
+        set url=#{url},
+            name=#{name}
+        where id = #{id}
+    </update>
+
+
+</mapper>

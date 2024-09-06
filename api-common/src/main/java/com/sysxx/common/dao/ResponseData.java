@@ -1,5 +1,6 @@
 package com.sysxx.common.dao;
 
+import com.sysxx.common.dao.RequestData;
 import lombok.Data;
 
 @Data

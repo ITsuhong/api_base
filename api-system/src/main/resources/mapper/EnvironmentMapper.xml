@@ -4,14 +4,56 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.sysxx.system.mapper.EnvironmentMapper">
 
-<!--    <resultMap type="SysRoleMenu" id="SysRoleMenuResult">-->
-<!--        <result property="roleId"     column="role_id"      />-->
-<!--        <result property="menuId"     column="menu_id"      />-->
-<!--    </resultMap>-->
+    <!--    <resultMap type="SysRoleMenu" id="SysRoleMenuResult">-->
+    <!--        <result property="roleId"     column="role_id"      />-->
+    <!--        <result property="menuId"     column="menu_id"      />-->
+    <!--    </resultMap>-->
+    <resultMap id="selectEnvironmentWithVariableResult" type="EnvironmentResult">
+        <id property="id" column="id"/>
+        <result property="name" column="name"/>
+        <collection property="variableDataList" ofType="VariableData" javaType="java.util.List">
+            <id property="id" column="variable_id"/>
+            <!--            <result property="environmentId" column="environment_id"></result>-->
+            <result property="name" column="variable_name"/>
+            <result property="value" column="value"/>
+            <result property="description" column="description"/>
+        </collection>
+        <collection property="serviceUrlDataList" ofType="ServiceUrlData" javaType="java.util.List">
+            <id property="id" column="service_id"/>
+            <result property="name" column="service_name"/>
+            <result property="url" column="url"/>
+        </collection>
+    </resultMap>
 
     <insert id="createEnvironment" useGeneratedKeys="true" keyProperty="id">
         insert into environment (name, user_id, user_name, project_id)
         values (#{name}, #{userId}, #{userName}, #{projectId})
     </insert>
+    <select id="selectAllEnvironment" resultMap="selectEnvironmentWithVariableResult">
+        select e.*,
+               v.name AS variable_name,
+               v.environment_id,
+               v.value,
+               v.description,
+               v.id   as variable_id,
+               s.name as service_name,
+               s.id   as service_id,
+               s.url
+        from environment e
+                 left join variable v
+                           on v.environment_id = e.id
+                 left join service_url s on s.environment_id = e.id
+    </select>
+
+    <update id="update">
+        update environment
+        set name=#{name}
+        where id = #{id}
+    </update>
+    <update id="delete">
+        delete
+        from environment
+        where id = #{id}
+    </update>
 
 </mapper>

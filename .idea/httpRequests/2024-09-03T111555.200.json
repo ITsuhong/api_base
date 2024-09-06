@@ -1,0 +1,86 @@
+{
+  "code": 200,
+  "data": [
+    {
+      "id": 20,
+      "createTime": null,
+      "updateTime": null,
+      "name": "环境44",
+      "userId": null,
+      "userName": null,
+      "projectId": null,
+      "variableList": [
+        {
+          "id": 20,
+          "createTime": null,
+          "updateTime": null,
+          "name": "name",
+          "value": "李四",
+          "description": "描述一",
+          "environmentId": 20
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "createTime": null,
+      "updateTime": null,
+      "name": "",
+      "userId": null,
+      "userName": null,
+      "projectId": null,
+      "variableList": [
+        {
+          "id": 21,
+          "createTime": null,
+          "updateTime": null,
+          "name": "name",
+          "value": "李四",
+          "description": "描述",
+          "environmentId": 21
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "createTime": null,
+      "updateTime": null,
+      "name": "",
+      "userId": null,
+      "userName": null,
+      "projectId": null,
+      "variableList": [
+        {
+          "id": 22,
+          "createTime": null,
+          "updateTime": null,
+          "name": "name",
+          "value": "李四",
+          "description": "描述",
+          "environmentId": 22
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "createTime": null,
+      "updateTime": null,
+      "name": "",
+      "userId": null,
+      "userName": null,
+      "projectId": null,
+      "variableList": [
+        {
+          "id": 23,
+          "createTime": null,
+          "updateTime": null,
+          "name": "age",
+          "value": "12",
+          "description": "描述",
+          "environmentId": 23
+        }
+      ]
+    }
+  ],
+  "message": "操作成功"
+}
