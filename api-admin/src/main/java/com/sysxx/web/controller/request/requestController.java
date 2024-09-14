@@ -1,15 +1,14 @@
 package com.sysxx.web.controller.request;
 
 import com.sysxx.common.core.domain.AjaxResult;
+import com.sysxx.common.dao.CreateInterface;
 import com.sysxx.common.enumeration.RequestTypeEnum;
 import com.sysxx.common.dao.RequestData;
+import com.sysxx.system.service.impl.IInterfaceServiceImpl;
 import com.sysxx.system.service.impl.RequestServiceImpl;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/request")
@@ -17,6 +16,8 @@ import org.springframework.web.bind.annotation.RestController;
 public class requestController {
     @Autowired
     RequestServiceImpl requestService;
+    @Autowired
+    IInterfaceServiceImpl iInterfaceService;
 
 
     @PostMapping
@@ -26,5 +27,15 @@ public class requestController {
         }
         return requestService.GetaX(requestData);
 
+    }
+
+    @PostMapping("/create_interface")
+    public AjaxResult createInterface(@RequestBody CreateInterface createInterface) {
+        return iInterfaceService.CreateInterface(createInterface);
+    }
+
+    @GetMapping("/select_interface")
+    public AjaxResult selectInterface() {
+        return iInterfaceService.selectInterface();
     }
 }

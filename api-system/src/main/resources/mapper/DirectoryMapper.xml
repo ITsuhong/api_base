@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sysxx.system.mapper.DirectoryMapper">
+
+   <insert id="createDirectory">
+       insert into directory(name, pid, service_id, des, project_id)
+       values (#{name}, #{pid}, #{serviceId}, #{des}, #{projectId})
+   </insert>
+
+    <select id="selectAll" resultType="Directory">
+        select *
+        from directory ORDER BY  `update_time` DESC
+    </select>
+
+</mapper>

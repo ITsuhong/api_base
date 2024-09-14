@@ -16,7 +16,6 @@ public class VariableController {
 
     @PostMapping("/creatGlobal")
     public AjaxResult creatGlobal(@RequestBody ArrayList<Variable> variables) {
-
         return variableService.createGlobal(variables);
     }
 

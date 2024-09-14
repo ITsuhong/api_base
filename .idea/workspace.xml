@@ -12,30 +12,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="88ae31ae-d9d1-42ea-aeab-7a71ed67d3bf" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/api-admin/src/main/java/com/sysxx/web/controller/variable/VariableController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-common/src/main/java/com/sysxx/common/core/domain/entity/EnvironmentResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-common/src/main/java/com/sysxx/common/core/domain/entity/ServiceUrlData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-system/src/main/java/com/sysxx/system/domain/ServiceUrl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-system/src/main/java/com/sysxx/system/mapper/ServiceUrlMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-system/src/main/java/com/sysxx/system/service/IVariableService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-system/src/main/java/com/sysxx/system/service/impl/VariableServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-system/src/main/resources/mapper/ServiceUrlMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-admin/src/main/java/com/sysxx/web/controller/directory/DirectoryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-common/src/main/java/com/sysxx/common/dao/CreateDirectory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-common/src/main/java/com/sysxx/common/dao/CreateInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-system/src/main/java/com/sysxx/system/domain/Directory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-system/src/main/java/com/sysxx/system/domain/Interface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-system/src/main/java/com/sysxx/system/mapper/DirectoryMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-system/src/main/java/com/sysxx/system/mapper/InterfaceMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-system/src/main/java/com/sysxx/system/service/IDirectoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-system/src/main/java/com/sysxx/system/service/IInterfaceService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-system/src/main/java/com/sysxx/system/service/impl/IDirectoryServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-system/src/main/java/com/sysxx/system/service/impl/IInterfaceServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-system/src/main/resources/mapper/DirectoryMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-system/src/main/resources/mapper/InterfaceMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/e97c1bd9-b695-4cfb-bfc4-3a6412701d6e.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/e97c1bd9-b695-4cfb-bfc4-3a6412701d6e.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-admin/src/main/java/com/sysxx/web/controller/environment/EnvironmentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-admin/src/main/java/com/sysxx/web/controller/environment/EnvironmentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-common/src/main/java/com/sysxx/common/dao/CreateEnvironmentData.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-common/src/main/java/com/sysxx/common/dao/CreateEnvironmentData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-common/src/main/java/com/sysxx/common/dao/ResponseData.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-common/src/main/java/com/sysxx/common/dao/ResponseData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-common/src/main/java/com/sysxx/common/dao/VariableData.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-common/src/main/java/com/sysxx/common/core/domain/entity/VariableData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-common/src/main/java/com/sysxx/common/utils/RestTemplateUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-common/src/main/java/com/sysxx/common/utils/RestTemplateUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-system/src/main/java/com/sysxx/system/domain/Environment.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-system/src/main/java/com/sysxx/system/domain/Environment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-system/src/main/java/com/sysxx/system/mapper/EnvironmentMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-system/src/main/java/com/sysxx/system/mapper/EnvironmentMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-system/src/main/java/com/sysxx/system/mapper/VariableMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-system/src/main/java/com/sysxx/system/mapper/VariableMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-system/src/main/java/com/sysxx/system/service/IAdminUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-system/src/main/java/com/sysxx/system/service/IAdminUserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-system/src/main/java/com/sysxx/system/service/IEnvironmentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-system/src/main/java/com/sysxx/system/service/IEnvironmentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-system/src/main/java/com/sysxx/system/service/impl/EnvironmentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-system/src/main/java/com/sysxx/system/service/impl/EnvironmentServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-system/src/main/java/com/sysxx/system/service/impl/RequestServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-system/src/main/java/com/sysxx/system/service/impl/RequestServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-system/src/main/resources/mapper/EnvironmentMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api-system/src/main/resources/mapper/EnvironmentMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-system/src/main/resources/mapper/VariableMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api-system/src/main/resources/mapper/VariableMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-admin/src/main/java/com/sysxx/web/controller/request/requestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-admin/src/main/java/com/sysxx/web/controller/request/requestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-admin/src/main/java/com/sysxx/web/controller/variable/VariableController.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-admin/src/main/java/com/sysxx/web/controller/variable/VariableController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,9 +45,9 @@
       <list>
         <option value="AnnotationType" />
         <option value="Enum" />
-        <option value="spring-beans.schema" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="spring-beans.schema" />
       </list>
     </option>
   </component>
@@ -76,55 +71,55 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "HTTP 请求.generated-requests | #1.executor": "Run",
-    "HTTP 请求.generated-requests | #13.executor": "Run",
-    "HTTP 请求.generated-requests | #2.executor": "Run",
-    "HTTP 请求.generated-requests | #6.executor": "Run",
-    "Maven.api-admin [clean].executor": "Run",
-    "Maven.api-admin [install].executor": "Run",
-    "Maven.api-common [clean].executor": "Run",
-    "Maven.api-common [install].executor": "Run",
-    "Maven.api-system [clean].executor": "Run",
-    "Maven.api-system [install].executor": "Run",
-    "Maven.api-system [site].executor": "Run",
-    "Maven.api_base [clean].executor": "Run",
-    "Maven.api_base [install].executor": "Run",
-    "Maven.ruoyi-admin [clean].executor": "Run",
-    "Maven.ruoyi-common [clean].executor": "Run",
-    "Maven.ruoyi-system [clean].executor": "Run",
-    "Maven.ruoyi_base [clean].executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "Spring Boot.Main.executor": "Run",
-    "git-widget-placeholder": "main",
-    "jdk.selected.JAVA_MODULE": "17 (2)",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/javaProject/api_base/api-admin/src/main/java/com/sysxx/web",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "D:/ruoyi/ruoyi_base/ruoyi-common/src/main/java/com/sysxx/common/Main.java",
-    "project.structure.last.edited": "模块",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "web.server",
-    "vue.rearranger.settings.migration": "true",
-    "应用程序.RestTemplateUtil.executor": "Run"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;HTTP 请求.generated-requests | #1.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP 请求.generated-requests | #13.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP 请求.generated-requests | #2.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP 请求.generated-requests | #6.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.api-admin [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.api-admin [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.api-common [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.api-common [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.api-system [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.api-system [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.api-system [site].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.api_base [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.api_base [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.ruoyi-admin [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.ruoyi-common [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.ruoyi-system [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.ruoyi_base [clean].executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Spring Boot.Main.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17 (2)&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/javaProject/api_base/api-admin/src/main/java/com/sysxx/web&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;D:/ruoyi/ruoyi_base/ruoyi-common/src/main/java/com/sysxx/common/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;web.server&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;,
+    &quot;应用程序.RestTemplateUtil.executor&quot;: &quot;Run&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\javaProject\api_base\api-admin\src\main\java\com\sysxx\web" />
@@ -210,7 +205,9 @@
       <workItem from="1723521052414" duration="43887000" />
       <workItem from="1724662787445" duration="17728000" />
       <workItem from="1725012126002" duration="73000" />
-      <workItem from="1725240683847" duration="36501000" />
+      <workItem from="1725240683847" duration="37256000" />
+      <workItem from="1725846025548" duration="8752000" />
+      <workItem from="1726106496722" duration="20446000" />
     </task>
     <servers />
   </component>
