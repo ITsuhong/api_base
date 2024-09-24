@@ -1,3 +1,12 @@
+GET http://localhost:8080/request/detail_interface?id=1
+Proxy-Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-09-19T120009.200.json
+
+###
+
 GET http://localhost:8080/environment/selectAll
 Proxy-Connection: Keep-Alive
 User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)

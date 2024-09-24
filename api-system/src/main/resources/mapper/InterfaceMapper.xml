@@ -3,7 +3,7 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper  namespace="com.sysxx.system.mapper.InterfaceMapper">
-    <insert id="createInterface">
+    <insert id="createInterface" useGeneratedKeys="true" keyProperty="id">
         insert into interface(pid, project_id, path, restful_type, status, header_id, labels, service_id, des,
                               request_header, params, body, response_body, user_id, directory_id, name)
         values (#{pid}, #{projectId}, #{path}, #{restfulType}, #{status}, #{headerId}, #{labels}, #{serviceId},
@@ -13,6 +13,12 @@
     <select id="selectInterface" resultType="Interface">
         select *
         from interface
+    </select>
+
+    <select id="detailInterface" resultType="Interface">
+        select *
+        from interface
+        where id = #{id}
     </select>
 
 </mapper>

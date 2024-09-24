@@ -1,6 +1,9 @@
 package com.sysxx.common.dao;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Data;
+
+import java.util.Date;
 
 @Data
 public class CreateInterface {
@@ -20,5 +23,9 @@ public class CreateInterface {
     private String params;
     private String body;
     private String responseBody;
-    private  String  name;
+    private String name;
+    @JsonFormat(locale = "zh", pattern = "yyyy-MM-dd HH:mm", timezone = "GMT+8")
+    private Date createTime;
+    @JsonFormat(locale = "zh", pattern = "yyyy-MM-dd HH:mm", timezone = "GMT+8")
+    private Date updateTime;
 }

@@ -38,4 +38,9 @@ public class requestController {
     public AjaxResult selectInterface() {
         return iInterfaceService.selectInterface();
     }
+
+    @GetMapping("/detail_interface")
+    public AjaxResult detailInterface(@RequestParam("id") Integer id) {
+        return iInterfaceService.detailInterface(id);
+    }
 }

@@ -34,14 +34,21 @@ public class IInterfaceServiceImpl implements IInterfaceService {
         interfaces.setParams(createInterface.getParams());
         interfaces.setBody(createInterface.getBody());
         interfaces.setResponseBody(createInterface.getResponseBody());
+        interfaces.setName(createInterface.getName());
 
-        interfaceMapper.createInterface(interfaces);
-        return AjaxResult.success();
+        Integer integer = interfaceMapper.createInterface(interfaces);
+        return AjaxResult.success(integer);
     }
 
     @Override
     public AjaxResult selectInterface() {
         List<Interface> interfaces = interfaceMapper.selectInterface();
         return AjaxResult.success(interfaces);
+    }
+
+    @Override
+    public AjaxResult detailInterface(Integer id) {
+        Interface anInterface = interfaceMapper.detailInterface(id);
+        return AjaxResult.success(anInterface);
     }
 }

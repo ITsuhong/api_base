@@ -1,0 +1,23 @@
+{
+  "code": 200,
+  "data": {
+    "id": 1,
+    "pid": 0,
+    "projectId": 1,
+    "userId": 1,
+    "directoryId": 5,
+    "serviceId": 22,
+    "headerId": 1,
+    "status": 1,
+    "restfulType": 1,
+    "labels": "这是标签",
+    "path": "http://locallhoust",
+    "des": "这是说明",
+    "requestHeader": "[{\"id\":\"id-f80356m\",\"name\":\"header\",\"value\":\"哈哈\",\"desc\":\"\"}]",
+    "params": "[{\"id\":\"id-l4kg656\",\"name\":\"name\",\"value\":\"李四\",\"desc\":\"\"}]",
+    "body": "{\"age\":11}",
+    "responseBody": "console.log('hello world!');1323",
+    "name": "这是接口"
+  },
+  "message": "操作成功"
+}

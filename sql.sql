@@ -1,26 +1,47 @@
-create table interface
+create table if not exists sys_admin.INTERFACE_LABEL
+(
+    id          int auto_increment
+        primary key,
+    create_time datetime default CURRENT_TIMESTAMP not null comment '创建时间',
+    update_time datetime default CURRENT_TIMESTAMP null on update CURRENT_TIMESTAMP comment '更新时间',
+    name        varchar(255)                       not null comment '状态名称'
+);
+
+create table if not exists sys_admin.INTERFACE_STATE
+(
+    id          int auto_increment
+        primary key,
+    create_time datetime default CURRENT_TIMESTAMP not null comment '创建时间',
+    update_time datetime default CURRENT_TIMESTAMP null on update CURRENT_TIMESTAMP comment '更新时间',
+    name        varchar(255)                       not null comment '状态名称',
+    type        int                                not null comment '类型'
+);
+
+create table if not exists sys_admin.interface
 (
     id             int auto_increment
         primary key,
-    pid            int default 0 null,
-    project_id     int           not null,
-    path           varchar(255)  not null,
-    restful_type   int           not null,
-    status         int           not null,
-    header_id      int           null,
-    labels         varchar(255)  null,
-    service_id     int           null,
-    des            varchar(255)  null,
-    request_header varchar(255)  null,
-    params         varchar(255)  null,
-    body           varchar(255)  null,
-    response_body  varchar(255)  null,
-    user_id        int           not null,
-    directory_id   int           not null,
-    name           varchar(255)  null
+    pid            int      default 0                 null,
+    project_id     int                                not null,
+    path           varchar(255)                       not null,
+    restful_type   int                                not null,
+    status         int                                not null,
+    header_id      int                                null,
+    labels         varchar(255)                       null,
+    service_id     int                                null,
+    des            varchar(255)                       null,
+    request_header varchar(255)                       null,
+    params         varchar(255)                       null,
+    body           varchar(255)                       null,
+    response_body  varchar(255)                       null,
+    user_id        int                                not null,
+    directory_id   int                                not null,
+    name           varchar(255)                       null,
+    create_time    datetime default CURRENT_TIMESTAMP not null comment '创建时间',
+    update_time    datetime default CURRENT_TIMESTAMP null on update CURRENT_TIMESTAMP comment '更新时间'
 );
 
-create table project
+create table if not exists sys_admin.project
 (
     id          int auto_increment
         primary key,
@@ -29,7 +50,7 @@ create table project
     name        varchar(255)                       not null comment '项目名称'
 );
 
-create table directory
+create table if not exists sys_admin.directory
 (
     id          int auto_increment
         primary key,
@@ -41,14 +62,14 @@ create table directory
     update_time datetime default CURRENT_TIMESTAMP null on update CURRENT_TIMESTAMP comment '更新时间',
     create_time datetime default CURRENT_TIMESTAMP not null comment '创建时间',
     constraint directory_ibfk_1
-        foreign key (project_id) references project (id)
+        foreign key (project_id) references sys_admin.project (id)
             on delete cascade
 );
 
 create index project_id
-    on directory (project_id);
+    on sys_admin.directory (project_id);
 
-create table environment
+create table if not exists sys_admin.environment
 (
     id          int auto_increment
         primary key,
@@ -59,11 +80,11 @@ create table environment
     user_name   varchar(255)                       null comment '用户姓名',
     project_id  int                                null comment '项目ID',
     constraint environment_ibfk_1
-        foreign key (project_id) references project (id)
+        foreign key (project_id) references sys_admin.project (id)
             on delete cascade
 );
 
-create table roles
+create table if not exists sys_admin.roles
 (
     id          int auto_increment comment '权限id'
         primary key,
@@ -75,7 +96,7 @@ create table roles
     creator     varchar(50)                              null comment '创建人'
 );
 
-create table admin_user
+create table if not exists sys_admin.admin_user
 (
     id            int auto_increment comment '用户id'
         primary key,
@@ -89,14 +110,14 @@ create table admin_user
     creator       varchar(50)                               null comment '创建人',
     role_id       int                                       null comment '身份',
     constraint admin_user_ibfk_1
-        foreign key (role_id) references roles (id)
+        foreign key (role_id) references sys_admin.roles (id)
             on delete cascade
 );
 
 create index role_id
-    on admin_user (role_id);
+    on sys_admin.admin_user (role_id);
 
-create table routes_module
+create table if not exists sys_admin.routes_module
 (
     id          int auto_increment comment '路由表id'
         primary key,
@@ -111,27 +132,27 @@ create table routes_module
     creator     varchar(50)                              null comment '创建人'
 );
 
-create table role_routes
+create table if not exists sys_admin.role_routes
 (
     roles_id         int not null comment '权限ID',
     routes_module_id int not null comment '路由模块ID',
     id               int auto_increment
         primary key,
     constraint role_routes_ibfk_1
-        foreign key (roles_id) references roles (id)
+        foreign key (roles_id) references sys_admin.roles (id)
             on delete cascade,
     constraint role_routes_ibfk_2
-        foreign key (routes_module_id) references routes_module (id)
+        foreign key (routes_module_id) references sys_admin.routes_module (id)
             on delete cascade
 );
 
 create index roles_id
-    on role_routes (roles_id);
+    on sys_admin.role_routes (roles_id);
 
 create index routes_module_id
-    on role_routes (routes_module_id);
+    on sys_admin.role_routes (routes_module_id);
 
-create table service_url
+create table if not exists sys_admin.service_url
 (
     id             int auto_increment
         primary key,
@@ -141,11 +162,11 @@ create table service_url
     url            varchar(255)                       not null comment '变量值',
     environment_id int                                null comment '环境ID',
     constraint service_url_ibfk_1
-        foreign key (environment_id) references environment (id)
+        foreign key (environment_id) references sys_admin.environment (id)
             on delete cascade
 );
 
-create table variable
+create table if not exists sys_admin.variable
 (
     id             int auto_increment
         primary key,
@@ -156,7 +177,7 @@ create table variable
     description    varchar(255)                       null comment '描述',
     environment_id int                                null comment '环境ID',
     constraint variable_ibfk_1
-        foreign key (environment_id) references environment (id)
+        foreign key (environment_id) references sys_admin.environment (id)
             on delete cascade
 );
 

@@ -1,9 +1,15 @@
 package com.sysxx.system.domain;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import com.sysxx.common.dao.CreateInterface;
+import lombok.Data;
+
+import java.util.Date;
+
 
 
 public class Interface extends CreateInterface {
+
 //    private Integer id;
 //    private Integer pid;
 //    private Integer projectId;

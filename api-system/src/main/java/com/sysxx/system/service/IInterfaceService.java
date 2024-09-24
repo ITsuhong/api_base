@@ -8,4 +8,6 @@ public interface IInterfaceService {
     public AjaxResult CreateInterface(CreateInterface createInterface);
 
     public AjaxResult selectInterface();
+
+    public  AjaxResult detailInterface(Integer id);
 }
