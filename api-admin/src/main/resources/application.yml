@@ -23,6 +23,7 @@ mybatis:
 #  configLocation: classpath:mybatis/mybatis-config.xml
   configuration:
     map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
 knife4j:
 #   开启增强配置
   enable: true

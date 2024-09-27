@@ -9,5 +9,9 @@ public interface IInterfaceService {
 
     public AjaxResult selectInterface();
 
-    public  AjaxResult detailInterface(Integer id);
+    public AjaxResult detailInterface(Integer id);
+
+    public AjaxResult deleteInterface(Integer id);
+
+    public AjaxResult updateInterface(CreateInterface interfaces);
 }

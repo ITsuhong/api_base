@@ -9,7 +9,11 @@ import java.util.List;
 public interface InterfaceMapper {
     public Integer createInterface(Interface i);
 
+    public  void updateInterface(Interface i);
+
     public List<Interface> selectInterface();
 
     public Interface detailInterface(Integer id);
+
+    public void  deleteInterface(Integer id);
 }

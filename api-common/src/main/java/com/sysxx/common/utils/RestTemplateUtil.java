@@ -4,6 +4,7 @@ import com.alibaba.fastjson.JSONObject;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.sysxx.common.dao.HeaderData;
+import com.sysxx.common.dao.ParamsData;
 import com.sysxx.common.dao.ResponseData;
 import com.sysxx.common.enumeration.RequestTypeEnum;
 import com.sysxx.common.handler.MyRestErrorHandler;
@@ -20,6 +21,7 @@ import org.springframework.util.MultiValueMap;
 import org.springframework.util.ObjectUtils;
 import org.springframework.web.client.RestTemplate;
 
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -56,9 +58,15 @@ public class RestTemplateUtil {
         return factory;
     }
 
-    public static ResponseData sendHttp(String path, RequestTypeEnum method, Map<String, ?> params, String body, String bodyType, String headers) {
-        // url拼接params参数
-//        path = buildUrlParams(path, params);
+    public static ResponseData sendHttp(String path, RequestTypeEnum method, List<ParamsData> params, String body, String bodyType, String headers) {
+     if(method==RequestTypeEnum.GET){
+         Map<String,String> paramsMap=new HashMap<>();
+         for(ParamsData map:params){
+             paramsMap.put(map.getName(), map.getValue());
+         }
+         // url拼接params参数
+         path = buildUrlParams(path, paramsMap);
+     }
         // 请求方式
         HttpMethod httpMethod = HttpMethod.valueOf(String.valueOf(method));
         System.out.println(httpMethod + "请求方式");

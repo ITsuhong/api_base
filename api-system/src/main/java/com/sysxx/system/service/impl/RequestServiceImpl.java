@@ -26,7 +26,7 @@ public class RequestServiceImpl implements IRequestService {
 //        Map<String, Object> params = new HashMap<>();
 //        params.put("pageNum", "1");
 //        params.put("pageSize", "1");
-        ResponseData responseData = RestTemplateUtil.sendHttp(path, method, null, null, "NONE", requestData.getHeaders());
+        ResponseData responseData = RestTemplateUtil.sendHttp(path, method, requestData.getParams(), null, "NONE", requestData.getHeaders());
         responseData.setRequestData(requestData);
         return AjaxResult.success(responseData);
     }

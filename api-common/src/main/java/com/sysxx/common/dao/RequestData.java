@@ -10,7 +10,7 @@ import java.util.Map;
 public class RequestData {
     private RequestTypeEnum requestType;
     private String path;
-    private List<Map<String, Object>> params;
+    private List<ParamsData> params;
     private Map<String, Object> bodyData;
     private String headers;
 }

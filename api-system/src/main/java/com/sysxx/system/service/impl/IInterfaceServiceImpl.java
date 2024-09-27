@@ -5,6 +5,7 @@ import com.sysxx.common.dao.CreateInterface;
 import com.sysxx.system.domain.Interface;
 import com.sysxx.system.mapper.InterfaceMapper;
 import com.sysxx.system.service.IInterfaceService;
+import lombok.val;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -36,8 +37,8 @@ public class IInterfaceServiceImpl implements IInterfaceService {
         interfaces.setResponseBody(createInterface.getResponseBody());
         interfaces.setName(createInterface.getName());
 
-        Integer integer = interfaceMapper.createInterface(interfaces);
-        return AjaxResult.success(integer);
+        interfaceMapper.createInterface(interfaces);
+        return AjaxResult.success(interfaces.getId());
     }
 
     @Override
@@ -50,5 +51,37 @@ public class IInterfaceServiceImpl implements IInterfaceService {
     public AjaxResult detailInterface(Integer id) {
         Interface anInterface = interfaceMapper.detailInterface(id);
         return AjaxResult.success(anInterface);
+    }
+
+    @Override
+    public AjaxResult deleteInterface(Integer id) {
+        interfaceMapper.deleteInterface(id);
+        return AjaxResult.success();
+    }
+
+    @Override
+    public AjaxResult updateInterface(CreateInterface upInterfaces) {
+        Interface interfaces = new Interface();
+        interfaces.setId(upInterfaces.getId());
+        interfaces.setPid(upInterfaces.getPid());
+        interfaces.setProjectId(upInterfaces.getProjectId());
+        interfaces.setUserId(upInterfaces.getUserId());
+        interfaces.setDirectoryId(upInterfaces.getDirectoryId());
+        interfaces.setServiceId(upInterfaces.getServiceId());
+        interfaces.setHeaderId(upInterfaces.getHeaderId());
+        interfaces.setStatus(upInterfaces.getStatus());
+        interfaces.setRestfulType(upInterfaces.getRestfulType());
+        interfaces.setLabels(upInterfaces.getLabels());
+        interfaces.setPath(upInterfaces.getPath());
+        interfaces.setDes(upInterfaces.getDes());
+        interfaces.setRequestHeader(upInterfaces.getRequestHeader());
+        interfaces.setParams(upInterfaces.getParams());
+        interfaces.setBody(upInterfaces.getBody());
+        interfaces.setResponseBody(upInterfaces.getResponseBody());
+        interfaces.setName(upInterfaces.getName());
+
+        interfaceMapper.updateInterface(interfaces);
+        return AjaxResult.success();
+
     }
 }

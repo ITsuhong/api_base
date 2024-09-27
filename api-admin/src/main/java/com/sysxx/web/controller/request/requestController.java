@@ -34,6 +34,11 @@ public class requestController {
         return iInterfaceService.CreateInterface(createInterface);
     }
 
+    @PostMapping("/update_interface")
+    public AjaxResult updateInterface(@RequestBody CreateInterface requestData) {
+        return iInterfaceService.updateInterface(requestData);
+    }
+
     @GetMapping("/select_interface")
     public AjaxResult selectInterface() {
         return iInterfaceService.selectInterface();
@@ -42,5 +47,10 @@ public class requestController {
     @GetMapping("/detail_interface")
     public AjaxResult detailInterface(@RequestParam("id") Integer id) {
         return iInterfaceService.detailInterface(id);
+    }
+
+    @GetMapping("/delete_interface")
+    public AjaxResult deleteInterface(@RequestParam("id") Integer id) {
+        return iInterfaceService.deleteInterface(id);
     }
 }

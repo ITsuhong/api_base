@@ -21,4 +21,31 @@
         where id = #{id}
     </select>
 
+    <delete id="deleteInterface">
+        delete
+        from interface
+        where id = #{id}
+    </delete>
+    <update id="updateInterface">
+        update interface
+        set pid=#{pid},
+            project_id=#{projectId},
+            path=#{path},
+            restful_type=#{restfulType},
+            status=#{status},
+            header_id=#{headerId},
+            labels=#{labels},
+            service_id=#{serviceId},
+            des=#{des},
+            request_header=#{requestHeader},
+            params=#{params},
+            body=#{body},
+            response_body=#{responseBody},
+            user_id=#{userId},
+            directory_id=#{directoryId},
+            name=#{name}
+        where id = #{id}
+    </update>
+
+
 </mapper>
