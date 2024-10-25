@@ -3,6 +3,7 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
+    <packaging>jar</packaging>
     <parent>
         <groupId>com.sysxx</groupId>
         <artifactId>api_base</artifactId>
@@ -40,5 +41,44 @@
             <scope>provided</scope>
         </dependency>
     </dependencies>
+    <build>
+        <finalName>admin</finalName>
+    </build>
+<!--    <build>-->
+<!--        <plugins>-->
+<!--            <plugin>-->
+<!--                <groupId>org.apache.maven.plugins</groupId>-->
+<!--                <artifactId>maven-compiler-plugin</artifactId>-->
+<!--                <version>3.1</version>-->
 
+<!--            </plugin>-->
+<!--            <plugin>-->
+<!--                <groupId>org.apache.maven.plugins</groupId>-->
+<!--                <artifactId>maven-jar-plugin</artifactId>-->
+<!--                <version>3.2.0</version>-->
+<!--                <configuration>-->
+<!--                    <archive>-->
+<!--                        <manifest>-->
+<!--                            <addClasspath>true</addClasspath>-->
+<!--                            <classpathPrefix>lib/</classpathPrefix>-->
+<!--                            <mainClass>com.sysxx.Main</mainClass>-->
+<!--                        </manifest>-->
+<!--                    </archive>-->
+<!--                </configuration>-->
+<!--            </plugin>-->
+<!--        </plugins>-->
+
+<!--        &lt;!&ndash;                <resources>&ndash;&gt;-->
+<!--        &lt;!&ndash;                    <resource>&ndash;&gt;-->
+<!--        &lt;!&ndash;                        <directory>api-admin/src/main/resources</directory>&ndash;&gt;-->
+<!--        &lt;!&ndash;                    </resource>&ndash;&gt;-->
+<!--        &lt;!&ndash;                    <resource>&ndash;&gt;-->
+<!--        &lt;!&ndash;                        <directory>api-admin/src/main/java</directory>&ndash;&gt;-->
+<!--        &lt;!&ndash;                        <includes>&ndash;&gt;-->
+<!--        &lt;!&ndash;                            <include>**/*.xml</include>&ndash;&gt;-->
+<!--        &lt;!&ndash;                        </includes>&ndash;&gt;-->
+<!--        &lt;!&ndash;                    </resource>&ndash;&gt;-->
+<!--        &lt;!&ndash;                </resources>&ndash;&gt;-->
+
+<!--    </build>-->
 </project>

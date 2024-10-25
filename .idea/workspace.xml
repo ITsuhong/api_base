@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="api_base:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
@@ -12,31 +17,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="88ae31ae-d9d1-42ea-aeab-7a71ed67d3bf" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/api-common/src/main/java/com/sysxx/common/dao/ParamsData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/api_base_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-admin/src/main/resources/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-common/src/main/java/com/sysxx/common/config/CORSFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e97c1bd9-b695-4cfb-bfc4-3a6412701d6e.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e97c1bd9-b695-4cfb-bfc4-3a6412701d6e/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e97c1bd9-b695-4cfb-bfc4-3a6412701d6e/storage_v2/_src_/schema/information_schema.FNRwLQ.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e97c1bd9-b695-4cfb-bfc4-3a6412701d6e/storage_v2/_src_/schema/meeting_room.XxxWoA.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e97c1bd9-b695-4cfb-bfc4-3a6412701d6e/storage_v2/_src_/schema/mybatis-example.cOfwdA.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e97c1bd9-b695-4cfb-bfc4-3a6412701d6e/storage_v2/_src_/schema/mysql.osA4Bg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e97c1bd9-b695-4cfb-bfc4-3a6412701d6e/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e97c1bd9-b695-4cfb-bfc4-3a6412701d6e/storage_v2/_src_/schema/ry_vue.joteyQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e97c1bd9-b695-4cfb-bfc4-3a6412701d6e/storage_v2/_src_/schema/studb.sg2LBg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e97c1bd9-b695-4cfb-bfc4-3a6412701d6e/storage_v2/_src_/schema/sys.zb4BAA.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e97c1bd9-b695-4cfb-bfc4-3a6412701d6e/storage_v2/_src_/schema/sys.zb4BAA.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e97c1bd9-b695-4cfb-bfc4-3a6412701d6e/storage_v2/_src_/schema/sys_admin.XRc7Hw.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-admin/src/main/java/com/sysxx/web/controller/request/requestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-admin/src/main/java/com/sysxx/web/controller/request/requestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-admin/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api-admin/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-admin/src/main/java/com/sysxx/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-admin/src/main/java/com/sysxx/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api-admin/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/api-admin/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-common/src/main/java/com/sysxx/common/dao/RequestData.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-common/src/main/java/com/sysxx/common/dao/RequestData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-common/src/main/java/com/sysxx/common/utils/RestTemplateUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-common/src/main/java/com/sysxx/common/utils/RestTemplateUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-system/src/main/java/com/sysxx/system/mapper/InterfaceMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-system/src/main/java/com/sysxx/system/mapper/InterfaceMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-system/src/main/java/com/sysxx/system/service/IInterfaceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-system/src/main/java/com/sysxx/system/service/IInterfaceService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-system/src/main/java/com/sysxx/system/service/impl/IInterfaceServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-system/src/main/java/com/sysxx/system/service/impl/IInterfaceServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-system/src/main/java/com/sysxx/system/service/impl/RequestServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-system/src/main/java/com/sysxx/system/service/impl/RequestServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-system/src/main/resources/mapper/InterfaceMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api-system/src/main/resources/mapper/InterfaceMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api-common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-common/src/main/java/com/sysxx/common/config/WebMvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-common/src/main/java/com/sysxx/common/config/WebMvcConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-system/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api-system/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,6 +58,9 @@
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
 }</component>
+  <component name="PerforceDirect.Settings">
+    <option name="CHARSET" value="无" />
+  </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -86,6 +84,7 @@
     "HTTP 请求.generated-requests | #6.executor": "Run",
     "Maven.api-admin [clean].executor": "Run",
     "Maven.api-admin [install].executor": "Run",
+    "Maven.api-admin [package].executor": "Run",
     "Maven.api-common [clean].executor": "Run",
     "Maven.api-common [install].executor": "Run",
     "Maven.api-system [clean].executor": "Run",
@@ -93,6 +92,7 @@
     "Maven.api-system [site].executor": "Run",
     "Maven.api_base [clean].executor": "Run",
     "Maven.api_base [install].executor": "Run",
+    "Maven.api_base [package].executor": "Run",
     "Maven.ruoyi-admin [clean].executor": "Run",
     "Maven.ruoyi-common [clean].executor": "Run",
     "Maven.ruoyi-system [clean].executor": "Run",
@@ -103,6 +103,7 @@
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Spring Boot.Main.executor": "Run",
     "git-widget-placeholder": "main",
     "jdk.selected.JAVA_MODULE": "17 (2)",
@@ -114,10 +115,10 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "onboarding.tips.debug.path": "D:/ruoyi/ruoyi_base/ruoyi-common/src/main/java/com/sysxx/common/Main.java",
-    "project.structure.last.edited": "模块",
+    "project.structure.last.edited": "工件",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.keymap",
+    "settings.editor.selected.configurable": "advanced.settings",
     "vue.rearranger.settings.migration": "true",
     "应用程序.RestTemplateUtil.executor": "Run"
   },
@@ -214,7 +215,12 @@
       <workItem from="1726631414529" duration="11755000" />
       <workItem from="1727237445608" duration="96000" />
       <workItem from="1727237567271" duration="11046000" />
-      <workItem from="1727329718064" duration="11014000" />
+      <workItem from="1727329718064" duration="16288000" />
+      <workItem from="1727577895993" duration="3953000" />
+      <workItem from="1728351798216" duration="1000" />
+      <workItem from="1728351988563" duration="9000" />
+      <workItem from="1728352048798" duration="3671000" />
+      <workItem from="1729736555348" duration="15917000" />
     </task>
     <servers />
   </component>

@@ -1,16 +1,16 @@
 server:
   port: 8080
   servlet:
-    context-path: /
+    context-path: /api
 spring:
   jackson:
     date-format: yyyy-MM-dd HH:mm:ss
     time-zone: GMT+8
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
-    url: jdbc:mysql://localhost:3306/sys_admin
+    url: jdbc:mysql://123.56.104.248/sys_api
     username: root
-    password: 123456
+    password: r*we9omBG34j
     driver-class-name: com.mysql.cj.jdbc.Driver
 
 mybatis:
